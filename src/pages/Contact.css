@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #8b5cf6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.contact-container {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 30px;
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+.contact-container h1 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+span{
+  color: red;
+}
+.msg{
+  color: black;
+}
+
+.contact-container p {
+  text-align: center;
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 8px;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.3);
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-container input::placeholder,
+.contact-container textarea::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 10px rgba(236,72,153,0.5);
+}
+
+.contact-container .error {
+  color: #f87171;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.contact-container .success {
+  color: #4ade80;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contact-container button {
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  border: none;
+  background: linear-gradient(90deg, #6366f1, #ec4899);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(236,72,153,0.5);
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-container h1 {
+    font-size: 28px;
+  }
+
+  .contact-container button {
+    font-size: 16px;
+  }
+}
